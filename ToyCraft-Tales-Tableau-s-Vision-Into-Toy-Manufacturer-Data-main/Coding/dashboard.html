@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - ToyCraft Tales</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h1>ToyCraft Tales</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="story.html">Story</a></li>
+  </ul>
+</nav>
+
+<section class="section">
+  <div class="glass-card">
+    <h3>📊 Interactive Toy Market Dashboard</h3>
+    <p style="margin-bottom:20px; opacity:0.8;">
+      Explore regional performance, seasonal trends, pricing insights, 
+      and product category analytics through interactive Tableau visualizations.
+    </p>
+
+    <!-- Tableau Embed -->
+    <div class="tableauPlaceholder" id="vizDashboard" style="position: relative;">
+      <noscript>
+        <a href="#">
+          <img alt="ToyCraft Dashboard"
+               src="https://public.tableau.com/static/images/To/ToyCraftTales_17509161245270/ToyCraftTalesTableausVisionintoToyManufacturerData/1.png"
+               style="width:100%;" />
+        </a>
+      </noscript>
+
+      <object class="tableauViz" style="display:none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="embed_code_version" value="3" />
+        <param name="name" value="ToyCraftTales_17509161245270/ToyCraftTalesTableausVisionintoToyManufacturerData" />
+        <param name="tabs" value="no" />
+        <param name="toolbar" value="yes" />
+        <param name="animate_transition" value="yes" />
+        <param name="display_spinner" value="yes" />
+        <param name="language" value="en-US" />
+      </object>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 ToyCraft Tales | Data Dashboard
+</footer>
+
+<script>
+  var divElement = document.getElementById('vizDashboard');
+  var vizElement = divElement.getElementsByTagName('object')[0];
+  vizElement.style.width = '100%';
+  vizElement.style.height = '900px';
+
+  var scriptElement = document.createElement('script');
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+</body>
+</html>
